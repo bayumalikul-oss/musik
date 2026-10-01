@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kalkulator modern dengan HTML, CSS, dan JavaScript murni.">
+  <title>Kalkulator Modern</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="calculator" aria-label="Kalkulator">
+      <header class="topbar">
+        <div>
+          <span class="eyebrow">SMART CALCULATOR</span>
+          <h1>Kalkulator</h1>
+        </div>
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Ganti tema">☾</button>
+      </header>
+
+      <div class="display">
+        <div id="history" class="history" aria-live="polite"></div>
+        <div id="expression" class="expression">0</div>
+        <div id="result" class="result">0</div>
+      </div>
+
+      <div class="keys">
+        <button class="key function" data-action="clear">AC</button>
+        <button class="key function" data-action="delete">DEL</button>
+        <button class="key function" data-action="percent">%</button>
+        <button class="key operator" data-value="÷">÷</button>
+
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key operator" data-value="×">×</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key operator" data-value="-">−</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key operator" data-value="+">+</button>
+
+        <button class="key zero" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+        <button class="key equals" data-action="calculate">=</button>
+      </div>
+
+      <footer>
+        <span>HTML • CSS • JavaScript</span>
+        <span id="status">Siap digunakan</span>
+      </footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
